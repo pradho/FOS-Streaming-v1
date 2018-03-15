@@ -18,7 +18,7 @@ fi
 error(){
     sleep 2
     echo -ne '\n'"--PROBLEM!--"
-    echo -ne '\n'"Support: https://github.com/zgelici/FOS-Streaming-v1" '\n'
+    echo -ne '\n'"Support: https://github.com/pradho/FOS-Streaming-v1" '\n'
 exit
 }
 
@@ -160,7 +160,7 @@ fos_install(){
     tar -xzf /home/fos-streaming/fos-streaming_unpack_i686.tar.gz -C /home/fos-streaming/
     rm -rf /home/fos-streaming/fos/www/vendor /home/fos-streaming/fos/www/50x.html > /dev/null 2>&1
     cd /home/fos-streaming/fos/www  > /dev/null 2>&1
-    git clone https://github.com/zgelici/FOS-Streaming-v1.git  > /dev/null 2>&1
+    git clone https://github.com/pradho/FOS-Streaming-v1.git  > /dev/null 2>&1
     cp -R /home/fos-streaming/fos/www/FOS-Streaming-v1/* /home/fos-streaming/fos/www/  > /dev/null 2>&1
 
     echo 'www-data ALL = (root) NOPASSWD: /usr/local/bin/ffmpeg' >> /etc/sudoers  > /dev/null 2>&1
